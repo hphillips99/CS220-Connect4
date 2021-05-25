@@ -126,22 +126,22 @@ public class Connect4Board extends JFrame {
                         System.out.printf("Column 1\n");
                         connect4.set(0);
                     }
-                    else if (e.getX() >= 105 && e.getX() <205) {
+                    else if (e.getX() >= 135 && e.getX() <235) {
                         connect4.set(1);
                     }
-                    else if (e.getX() >= 205 && e.getX() <305) {
+                    else if (e.getX() >= 235 && e.getX() <335) {
                         connect4.set(2);
                     }
-                    else if (e.getX() >= 305 && e.getX() <405) {
+                    else if (e.getX() >= 335 && e.getX() <435) {
                         connect4.set(3);
                     }
-                    else if (e.getX() >= 405 && e.getX() <505) {
+                    else if (e.getX() >= 435 && e.getX() <535) {
                         connect4.set(4);
                     }
-                    else if (e.getX() >= 505 && e.getX() <605) {
+                    else if (e.getX() >= 535 && e.getX() <635) {
                         connect4.set(5);
                     }
-                    else if (e.getX() >= 605 && e.getX() <705) {
+                    else if (e.getX() >= 635 && e.getX() <735) {
                         connect4.set(6);
                     }
                 }
