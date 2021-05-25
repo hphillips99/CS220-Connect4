@@ -93,12 +93,12 @@ public class Connect4 {
         }
 
         //check for diagonal top right running downward and left
-        for (int r=grid.length - 1; r<grid.length - 4; r--) {
-            for (int c=0; c<grid[r].length - 3; c++) {
+        for (int r=0; r<grid.length - 3; r++) {
+            for (int c=0; c<grid[0].length - 3; c++) {
                 if (grid[r][c] == Checker.RED && 
-                grid[r-1][c+1] == Checker.RED && 
-                grid[r-2][c+2] == Checker.RED && 
-                grid[r-3][c+3] == Checker.RED) {
+                grid[r+1][c+1] == Checker.RED && 
+                grid[r+2][c+2] == Checker.RED && 
+                grid[r+3][c+3] == Checker.RED) {
                     return true;
                 }
             }
@@ -144,12 +144,12 @@ public class Connect4 {
         }
 
         //check for diagonal top right running downward and left
-        for (int r=grid.length - 1; r<grid.length - 4; r--) {
-            for (int c=0; c<grid[r].length - 3; c++) {
+        for (int r=0; r<grid.length - 3; r++) {
+            for (int c=0; c<grid[0].length - 3; c++) {
                 if (grid[r][c] == Checker.YELLOW && 
-                grid[r-1][c+1] == Checker.YELLOW && 
-                grid[r-2][c+2] == Checker.YELLOW && 
-                grid[r-3][c+3] == Checker.YELLOW) {
+                grid[r+1][c+1] == Checker.YELLOW && 
+                grid[r+2][c+2] == Checker.YELLOW && 
+                grid[r+3][c+3] == Checker.YELLOW) {
                     return true;
                 }
             }
